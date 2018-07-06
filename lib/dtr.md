@@ -21,34 +21,79 @@ How will we recognize each other's successes and celebrate them?
 Any additional questions that you would like to add:
 
 Template for DTR Memo
-Project:
+Project: Night Writer
 
-Group Member Names:
+Group Member Names: Rajaa & Kelly
 
 Project Expectations: What does each group member hope to get out of this project?
+ - Rajaa:  Complete at least Iteration 3, and strive for It. 4; have code we are happy with; learn new things; experience the pairing; accomplish work while enjoying the work  
+  - Kelly:  Confidently complete It. 3; have the opportunity to teach one another; have an enjoyable pairing experience; learn new coding techniques
 
 Goals and expectations:
+Goals:
+ - Complete Iteration 3 successfully
+ - Have a positive pairing experience; look back and say, "that was a good session"
+  - Successful execution of GitHub for Pairs
+Expectations:
+ - Be nice to one another, respectful
+ - Be honest and communicate directly any issue or topic; non-judgemental in our responses
+ - Be on time, or communicate ASAP if delayed
+ - Be reliable on deliverables and on all commitments
+ - Be dependable in giving our best efforts
+ - Be open about any points of confusion
 
 Team strengths:
+ - Determination and commitment
+ - Communication
+ - Respectfulness
+ - Open to learning new things
+ - Eagerness - growth mindset
 
 How to overcome obstacles:
+ - Communicate!!!
+ - Beware assumptions
+ - Use our PD toolkit
+ - Work to really understand the cause
+ - Seek advice from external resources
+ - Seek advice for tech issues from more experienced programmers
 
 Schedule Expectations (When are we available to work together and individually?):
+Saturday and Sunday afternoons together; after class together; decide on lunch commitments on Monday; work independently in all other non-class and non-project-scheduled-pair time
 
 Communication Expectations (How and often will we communicate? How do we keep lines of communication open?):
+- Do a daily retrospective and decide on how much evening time we want to commit to being available on Slack.
+- In retro, determine if we are on the same page about: achievements, issues, next steps, and that the issues of that day were addressed and resolved.
+ - Have phone numbers for one another
 
 Abilities Expectations (Technical strengths and areas for desired improvement):
+ - That we will discover areas of weakness and strength as we go.
+ - We will help one another with technical concepts as they arise.
 
 Workload Expectations (What features do we each want to work on?):
+- TBD
 
 Workflow Expectations (Git workflow/Tools/Code Review/Reviewing Pull Requests):
+ - Stick as closely as possible to the Git for Pairs model
 
 Expectations for giving and receiving feedback:
+ - Kind
+ - Actionable
+ - Specific
+ - Constructive
+ - Solution-oriented
 
 Agenda to discuss project launch:
+ - Read through project and give considered thought prior to Saturday at Noon.
+ - Determine first thing Saturday (Noon) what our initial solution steps should be
+ - From initial read of project and solution steps, determine best strategy for solution and execution
 
 Ideas:
 
 Tools:
+ - Project spec
+ - Lessons
+ - Ruby Docs
+ - Internet Research
+ - Mentoring
 
 Additional Notes:
