@@ -35,6 +35,19 @@ attr_reader :english_to_braille
     @english_to_braille[letter_1]
   end
 
+  def translate_text_to_braille(text)
+    braille_values = []
+    text.chars.each do |character|
+      braille_values << english_to_braille[character]
+    end
+    return braille_values 
+  end
+
+  # def arrange_by_index(text)
+  #   translate_text_to_braille.transpose
+
+
+
   def translate_letter_to_brailLe_in_3_rows(letter_2)
     pair_1 = []
     pair_2 = []
@@ -57,9 +70,5 @@ attr_reader :english_to_braille
       pair_3 << translate_letter_to_braille(character)[2]
     end
     return pair_1, pair_2, pair_3
-
   end
-
-
-
 end

@@ -26,6 +26,12 @@ class TranslationTest < Minitest::Test
     assert_equal ["0.", "..", ".."], translation.translate_letter_to_braille("q")
   end
 
+  def test_translate_text_to_braille
+    translation = Translation.new
+
+    assert_equal [["00", "..", "00"], ["00", ".0", "00"], ["0.", ".0", "00"]], translation.translate_text_to_braille("xyz")
+  end 
+
   def test_translate_letter_to_brailLe_in_3_rows
 
     translation = Translation.new
