@@ -30,36 +30,10 @@ attr_reader :english_to_braille
       "z" => ["0.", ".0", "00"]
     }
   end
-
-  def translate_letter_to_braille(letter_1)
-    @english_to_braille[letter_1]
-  end
-
-  def translate_letter_to_brailLe_in_3_rows(letter_2)
-    pair_1 = []
-    pair_2 = []
-    pair_3 = []
-    pair_1 << translate_letter_to_braille(letter_2)[0]
-    pair_2 << translate_letter_to_braille(letter_2)[1]
-    pair_3 << translate_letter_to_braille(letter_2)[2]
-
-    return pair_1, pair_2, pair_3
-
-  end
-
-  def translate_word_to_brailLe_in_3_rows(word)
-    pair_1 = []
-    pair_2 = []
-    pair_3 = []
-    word.chars.map do |character|
-      pair_1 << translate_letter_to_braille(character)[0]
-      pair_2 << translate_letter_to_braille(character)[1]
-      pair_3 << translate_letter_to_braille(character)[2]
+  
+  def translate_text_to_braille(text)
+    text.chars.map do |character|
+      english_to_braille[character]
     end
-    return pair_1, pair_2, pair_3
-
   end
-
-
-
 end

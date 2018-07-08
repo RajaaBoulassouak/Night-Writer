@@ -19,24 +19,11 @@ class TranslationTest < Minitest::Test
     assert_equal ["0.", ".0", "00"], translation.english_to_braille["z"]
   end
 
-  def test_translate_letter_to_braille
-
+  def test_translate_text_to_braille
     translation = Translation.new
 
-    assert_equal ["0.", "..", ".."], translation.translate_letter_to_braille("q")
-  end
-
-  def test_translate_letter_to_brailLe_in_3_rows
-
-    translation = Translation.new
-
-    assert_equal [["00"], [".0"], ["00"]], translation.translate_letter_to_brailLe_in_3_rows("y")
-  end
-
-  def test_translate_word_to_brailLe_in_3_rows
-    translation = Translation.new
-
-    assert_equal [["00", "0."], [".0", ".."], ["00", ".."]], translation.translate_word_to_brailLe_in_3_rows("yq")
+    assert_equal [["00", "..", "00"], ["00", ".0", "00"], ["0.", ".0", "00"]], translation.translate_text_to_braille("xyz")
+    assert_equal [["00", "..", "00"]], translation.translate_text_to_braille("x")
   end
 
 end
