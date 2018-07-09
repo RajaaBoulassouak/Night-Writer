@@ -27,13 +27,37 @@ attr_reader :english_to_braille
       "w" => [".0", "00", ".0"],
       "x" => ["00", "..", "00"],
       "y" => ["00", ".0", "00"],
-      "z" => ["0.", ".0", "00"]
+      "z" => ["0.", ".0", "00"],
+      " " => ["..", "..", ".."]
     }
   end
   
-  def translate_text_to_braille(text)
-    text.chars.map do |character|
-      english_to_braille[character]
+  def slice_text(text)
+  sliced_text = []
+  ((text.length / 80) +1).times do
+    sliced_text << text.slice!(0..79)
     end
   end
+  
+  def translate_text_to_braille(string)
+    # require "pry"; binding.pry
+    
+      string.chars.map do |character|
+        english_to_braille[character]
+    end
+    # braille_characters.transpose#.each_slice(80).with_index
+  end
+  
+
+  # def translate_text_to_braille(string)
+  #   string.chars.map do |character|
+  #     english_to_braille[character]
+  #   end
+  #   # braille_characters.transpose#.each_slice(80).with_index
+  # end
+
+
 end
+
+# translation = Translation.new
+# p translation.translate_text_to_braille("wonderful")
