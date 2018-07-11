@@ -1,21 +1,21 @@
-require './lib/night_reader'
+require './lib/be_translation'
 require 'pry'
 require 'minitest/autorun'
 require 'minitest/pride'
 
-class NightReaderTest
+class BETranslationTest < Minitest::Test
   
   def test_it_exists
-    night_reader = NightReader.new  
+    be_translation = BETranslation.new  
     
-    assert_instance_of NightReader, night_reader
+    assert_instance_of BETranslation, be_translation
   end 
   
   def test_it_returns_value
-    night_reader = NightReader.new
+    be_translation = BETranslation.new
     
-    assert_equal "t", night_reader.braille_to_english[".0", "00", "0."]
-    assert_equal "j", night_reader.braille_to_english[".0", "00", ".."]
+    assert_equal "t", be_translation.braille_to_english[[".0", "00", "0."]]
+    assert_equal "j", be_translation.braille_to_english[[".0", "00", ".."]]
   end 
   
 end 
