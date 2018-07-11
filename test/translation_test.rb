@@ -12,7 +12,6 @@ class TranslationTest < Minitest::Test
   end
 
   def test_letter_returns_array
-
     translation = Translation.new
 
     assert_equal ["0.", "..", ".."], translation.english_to_braille["a"]
@@ -20,6 +19,7 @@ class TranslationTest < Minitest::Test
   end
 
   def test_translate_text_to_braille
+    # skip
     translation = Translation.new
 
     assert_equal [["00", "..", "00"], ["00", ".0", "00"], ["0.", ".0", "00"]], translation.translate_text_to_braille("xyz")
