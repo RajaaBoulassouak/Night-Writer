@@ -2,16 +2,21 @@ require './lib/translation'
 
     handle = File.open(ARGV[0], "r")
     incoming_text = handle.read
-    handle.close  
+    handle.close
+    
     
     translation = Translation.new
-    sliced_text = translation.slice_text(incoming_text)
-    require "pry"; binding.pry
-    translate = translation.translate_text_to_braille(sliced_text)
-    # require "pry"; binding.pryin
+    translated_text = translation.translate_text_to_braille(incoming_text)
+    braille_output = translation.format_braille_output(translated_text)
+  
 
     writer = File.open(ARGV[1], "w")
-    writer.write(translate)
+    writer.write(braille_output)
     writer.close
 
     puts "Created '#{ARGV[1]}' containing #{incoming_text.length} characters"
+    
+    
+    
+    
+    
