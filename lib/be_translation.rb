@@ -1,4 +1,4 @@
-class NightReader
+class BETranslation
   
   attr_reader   :braille_to_english
   

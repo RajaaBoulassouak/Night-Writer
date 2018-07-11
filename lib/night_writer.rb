@@ -1,13 +1,13 @@
-require './lib/translation'
+require './lib/eb_translation'
 
     handle = File.open(ARGV[0], "r")
     incoming_text = handle.read
     handle.close
     
     
-    translation = Translation.new
-    translated_text = translation.translate_text_to_braille(incoming_text)
-    braille_output = translation.format_braille_output(translated_text)
+    eb_translation = EBTranslation.new
+    translated_text = eb_translation.translate_text_to_braille(incoming_text)
+    braille_output = eb_translation.format_braille_output(translated_text)
   
 
     writer = File.open(ARGV[1], "w")
