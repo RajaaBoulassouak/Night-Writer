@@ -18,4 +18,11 @@ class BETranslationTest < Minitest::Test
     assert_equal "j", be_translation.braille_to_english[[".0", "00", ".."]]
   end 
   
+  def test_it_adds_dimension_to_array 
+    be_translation = BETranslation.new 
+    
+    assert_equal [["a"], ["b"], ["c"]], be_translation.add_dimension(["a", "b", "c"])
+  end
+
+  
 end 
