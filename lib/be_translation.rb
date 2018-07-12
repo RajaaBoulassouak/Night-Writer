@@ -60,9 +60,10 @@ class BETranslation
   
   def translate_to_english(sixes)
     sixes.map! do |six|
-      @braille_to_english[six]#[0]
+      @braille_to_english[six]
     end.join 
-  end  
+  end 
+   
 end  
 
 

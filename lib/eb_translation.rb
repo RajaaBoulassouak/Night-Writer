@@ -55,5 +55,6 @@ class EBTranslation
     end 
     chunked_for_print.join
   end
+  
 end
 
