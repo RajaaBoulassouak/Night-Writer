@@ -33,8 +33,8 @@ class BETranslation
       "......" => " "
     }
   end
-  
-  def remove_line_breaks(lines_array)
+
+  def remove_line_break(lines_array)
     lines_array.map! do |line|
       line.chomp
     end 
@@ -63,7 +63,6 @@ class BETranslation
       @braille_to_english[six]#[0]
     end.join 
   end  
-   
-end 
+end  
 
 
