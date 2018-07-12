@@ -34,9 +34,9 @@ class BETranslation
     }
   end
   
-  def add_dimension(lines_array)
+  def remove_line_breaks(lines_array)
     lines_array.map! do |line|
-      Array.new << line.chomp
+      line.chomp
     end 
   end 
   
@@ -62,21 +62,8 @@ class BETranslation
     sixes.map! do |six|
       @braille_to_english[six]#[0]
     end.join 
-  end 
-  
-  # def group_in_threes(lines_array)
-  #   grouped_lines = []
-  #   until lines_array.count == 0
-  #     grouped_lines << lines_array.slice!(0..2)
-  #   end 
-  #   return grouped_lines
-  # end   
+  end  
+   
 end 
-bt = BETranslation.new 
-p bt.break_strings(["aaa", "bbb", "eee"]) #[["a", "a", "a"], ["b", "b", "b"]]
-p bt.break_strings(["aaa", "bbb", "eee"]).transpose.join
-p bt.split_into_sextets("abeabeabe")
-p bt.translate_to_english(["0.....", "0.0...", "0..0.."])
-p bt.translate_to_english(["0.....", "0.0...", "0..0.."])
 
 
