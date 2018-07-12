@@ -46,5 +46,6 @@ class BETranslationTest < Minitest::Test
     be_translation = BETranslation.new 
     
     assert_equal "abe", be_translation.translate_to_english(["0.....", "0.0...", "0..0.."])
-  end   
+  end 
+    
 end 

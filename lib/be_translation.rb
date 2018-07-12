@@ -33,7 +33,7 @@ class BETranslation
       "......" => " "
     }
   end
-  
+
   def remove_line_break(lines_array)
     lines_array.map! do |line|
       line.chomp
@@ -60,15 +60,10 @@ class BETranslation
   
   def translate_to_english(sixes)
     sixes.map! do |six|
-      @braille_to_english[six]#[0]
+      @braille_to_english[six]
     end.join 
   end 
-end 
-bt = BETranslation.new 
-p bt.break_strings(["aaa", "bbb", "eee"]) #[["a", "a", "a"], ["b", "b", "b"]]
-p bt.break_strings(["aaa", "bbb", "eee"]).transpose.join
-p bt.split_into_sextets("abeabeabe")
-p bt.translate_to_english(["0.....", "0.0...", "0..0.."])
-p bt.translate_to_english(["0.....", "0.0...", "0..0.."])
+   
+end  
 
 

@@ -22,7 +22,6 @@ class EBTranslationTest < Minitest::Test
     eb_translation = EBTranslation.new
 
     assert_equal [["0.", "..", ".."], ["0.", "0.", ".."]], eb_translation.translate_text_to_braille("ab")
-    
     assert_equal [["00", "..", "00"]], eb_translation.translate_text_to_braille("x")
   end
   
