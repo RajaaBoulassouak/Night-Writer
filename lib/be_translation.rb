@@ -34,9 +34,9 @@ class BETranslation
     }
   end
   
-  def add_dimension(lines_array)
+  def remove_line_break(lines_array)
     lines_array.map! do |line|
-      Array.new << line.chomp
+      line.chomp
     end 
   end 
   

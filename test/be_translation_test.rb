@@ -18,10 +18,10 @@ class BETranslationTest < Minitest::Test
     assert_equal "j", be_translation.braille_to_english[".000.."]
   end 
   
-  def test_it_adds_dimension_to_array 
+  def test_it_removes_line_breaks 
     be_translation = BETranslation.new 
     
-    assert_equal [["a"], ["b"], ["c"]], be_translation.add_dimension(["a", "b", "c"])
+    assert_equal ["hello world"], be_translation.remove_line_break(["hello world\n"])
   end
   
   def test_it_breaks_strings
